@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BOOKING PENGINAPAN VEINTISAIS</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+</head>
+<body class="bg-gray-100 text-gray-800 font-sans">
+  <!-- Hero Section -->
+  <section class="relative h-screen bg-cover bg-center" style="background-image: url('https://source.unsplash.com/1600x900/?villa,beach');">
+    <div class="bg-black bg-opacity-60 w-full h-full flex items-center justify-center">
+      <div class="text-center text-white">
+        <h1 class="text-5xl font-bold mb-4">Temukan Villa Impian Anda</h1>
+        <p class="mb-6 text-lg">Booking villa eksklusif untuk liburan terbaik Anda.</p>
+        <a href="#villas" class="bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-full font-semibold">Lihat Villa</a>
+      </div>
+    </div>
+  </section>
+
+ <<!-- Fitur Utama -->
+<section class="py-16 bg-white" id="villas">
+  <div class="max-w-6xl mx-auto px-4">
+    <h2 class="text-3xl font-bold text-center mb-12">Kenapa Booking di Sini?</h2>
+    <div class="grid md:grid-cols-3 gap-8">
+      <a href="#daftar" class="block bg-yellow-100 p-6 rounded-lg shadow hover:bg-yellow-200 transition">
+        <h3 class="text-xl font-semibold mb-2">01. Booking Mudah</h3>
+        <p>Pesan villa dengan cepat dan tanpa ribet dalam beberapa klik saja.</p>
+      </a>
+      <a href="https://www.google.com/maps/place/VILLA+VIUNA/@-6.6495009,106.931569,17z/data=!3m1!4b1!4m6!3m5!1s0x2e69b7509f6a209f:0x70334b9fde93486a!8m2!3d-6.6495009!4d106.931569!16s%2Fg%2F11jbtp6clf?entry=ttu&g_ep=EgoyMDI1MDYzMC4wIKXMDSoASAFQAw%3D%3D" class="block bg-green-100 p-6 rounded-lg shadow hover:bg-green-200 transition">
+        <h3 class="text-xl font-semibold mb-2">02. Lokasi Strategis</h3>
+        <p>Villa terbaik di lokasi populer seperti pantai, pegunungan, dan kota wisata.</p>
+      </a>
+      <a href="#kontak" class="block bg-blue-100 p-6 rounded-lg shadow hover:bg-blue-200 transition">
+        <h3 class="text-xl font-semibold mb-2">03. Check-in Fleksibel</h3>
+        <p>Jam check-in dan check-out yang fleksibel sesuai kenyamanan Anda.</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+
+
+
+  <!-- Daftar Villa -->
+  <section class="py-16 bg-gradient-to-br from-blue-50 to-blue-100" id="daftar">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-12">Daftar Villa</h2>
+      <div class="grid md:grid-cols-2 gap-8">
+        <!-- Villa 1 -->
+        <div class="bg-white shadow rounded-lg overflow-hidden">
+          <img src="https://source.unsplash.com/400x300/?villa" alt="Villa Mawar" class="w-full h-56 object-cover">
+          <div class="p-4">
+            <h3 class="text-xl font-semibold mb-2">Villa Mawar</h3>
+            <p class="text-gray-600 mb-2">Villa sejuk di pegunungan dengan view menakjubkan.</p>
+            <p class="text-green-600 font-bold">Rp 1.500.000 / malam</p>
+            <div class="my-4">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3944.3921816148413!2d115.2164980147847!3d-8.670458193767486!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd2470636a8b3c3%3A0x9876543210abcdef!2sSeminyak%2C%20Bali!5e0!3m2!1sid!2sid!4v1621081900000!5m2!1sid!2sid" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            <button onclick="openBooking('Villa Mawar')" class="mt-2 inline-block bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Pesan Sekarang</button>
+          </div>
+        </div>
+
+        <!-- Villa 2 -->
+        <div class="bg-white shadow rounded-lg overflow-hidden">
+          <img src="https://source.unsplash.com/400x300/?resort" alt="Villa Anggrek" class="w-full h-56 object-cover">
+          <div class="p-4">
+            <h3 class="text-xl font-semibold mb-2">Villa Anggrek</h3>
+            <p class="text-gray-600 mb-2">Villa dekat pantai dengan fasilitas lengkap dan kolam renang.</p>
+            <p class="text-green-600 font-bold">Rp 2.000.000 / malam</p>
+            <div class="my-4">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3944.3921816148413!2d115.2164980147847!3d-8.670458193767486!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd2470636a8b3c3%3A0xabcdef1234567890!2sCanggu%2C%20Bali!5e0!3m2!1sid!2sid!4v1621081999999!5m2!1sid!2sid" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            <button onclick="openBooking('Villa Anggrek')" class="mt-2 inline-block bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Pesan Sekarang</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Form Booking Popup -->
+  <div id="bookingForm" class="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center hidden z-50">
+    <div class="bg-white p-6 rounded-lg w-full max-w-md relative">
+      <button onclick="closeBooking()" class="absolute top-2 right-2 text-gray-500 hover:text-black">✕</button>
+      <h2 id="villaName" class="text-2xl font-bold mb-4">Booking Villa</h2>
+      <form onsubmit="submitBooking(event)">
+        <label class="block mb-1 font-semibold">Nama Anda:</label>
+        <input type="text" id="nama" required class="w-full border px-3 py-2 rounded mb-4" />
+        <label class="block mb-1 font-semibold">Tanggal Booking:</label>
+        <input type="text" id="datePicker" required class="w-full border px-3 py-2 rounded mb-4" />
+        <button type="submit" class="w-full bg-blue-500 text-white py-2 rounded hover:bg-blue-600">Booking Sekarang</button>
+      </form>
+    </div>
+  </div>
+
+<!-- Kontak Person -->
+<section class="py-16 bg-gradient-to-br from-blue-50 to-blue-100" id="kontak">
+  <div class="max-w-4xl mx-auto px-6">
+    <div class="text-center mb-12">
+      <h2 class="text-4xl font-bold text-gray-800 mb-4">Hubungi Kami</h2>
+      <p class="text-gray-600 text-lg">Kami siap membantu Anda kapan saja. Jangan ragu untuk menghubungi kami melalui salah satu kontak berikut.</p>
+    </div>
+    <div class="grid md:grid-cols-2 gap-8">
+      <div class="bg-white p-6 rounded-2xl shadow-lg">
+        <h3 class="text-xl font-semibold mb-3 text-blue-600">Informasi Kontak</h3>
+        <ul class="space-y-2 text-gray-700">
+          <li><strong>Nama:</strong> Rizki Fadilah</li>
+          <li><strong>Email:</strong> <a href="mailto:rizki@example.com" class="text-blue-500 hover:underline">rizki@example.com</a></li>
+          <li><strong>WhatsApp:</strong> <a href="https://wa.me/6281234567890" target="_blank" class="text-green-500 hover:underline">+62 812-3456-7890</a></li>
+          <li><strong>Alamat:</strong> Jl. Sunset Road No.88, Bali, Indonesia</li>
+        </ul>
+      </div>
+      <div class="bg-white p-6 rounded-2xl shadow-lg">
+        <h3 class="text-xl font-semibold mb-3 text-blue-600">Kirim Pesan</h3>
+        <form action="mailto:rizki@example.com" method="post" enctype="text/plain" class="space-y-4">
+          <input type="text" name="nama" placeholder="Nama Anda" class="w-full border px-4 py-2 rounded" required>
+          <input type="email" name="email" placeholder="Email" class="w-full border px-4 py-2 rounded" required>
+          <textarea name="pesan" placeholder="Pesan Anda" class="w-full border px-4 py-2 rounded h-32" required></textarea>
+          <button type="submit" class="bg-blue-500 text-white px-6 py-2 rounded hover:bg-blue-600">Kirim Pesan</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <script>
+    function openBooking(villa) {
+      document.getElementById("villaName").innerText = "Booking " + villa;
+      document.getElementById("bookingForm").classList.remove("hidden");
+      flatpickr("#datePicker", {
+        minDate: "today",
+        disable: ["2025-07-10", "2025-07-12"]
+      });
+    }
+    function closeBooking() {
+      document.getElementById("bookingForm").classList.add("hidden");
+    }
+    function submitBooking(event) {
+      event.preventDefault();
+      alert("Booking berhasil!");
+      closeBooking();
+    }
+  </script>
+</body>
+</html>
